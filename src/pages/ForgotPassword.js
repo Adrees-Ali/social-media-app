@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Forgot_password() {
+export default function ForgotPassword() {
   return (
     <div className="forgot-password-container">
       <header className="forgot-password-header">

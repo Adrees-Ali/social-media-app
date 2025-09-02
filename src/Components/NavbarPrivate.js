@@ -26,7 +26,7 @@ export default function NavbarPrivate() {
                 <Link className="nav-link" to="/messages">Messages</Link>
                 </li>
                 <li className="nav-item">
-                <Link className="nav-link" to="/create_post">Create_Post</Link>
+                <Link className="nav-link" to="/createPost">Create_Post</Link>
                 </li>
                 
 
@@ -36,18 +36,23 @@ export default function NavbarPrivate() {
                     Profile
                   </Link>
                   <ul className="dropdown-menu">
-                    <li><Link className="dropdown-item" to="/">view Profile</Link></li>
-                    <li><Link className="dropdown-item" to="/">Settings</Link></li>
+                    <li><Link className="dropdown-item" to="/viewprofile">view Profile</Link></li>
+                    <li><Link className="dropdown-item" to="/settings">Settings</Link></li>
                     <li><hr className="dropdown-divider"/></li>
                     <li><Link className="dropdown-item" to="/login">logout</Link></li>
                   </ul>
                 </li>
 
-            <form className="d-flex" role="search">
-              <input className="form-control me-2 " type="search" placeholder="Search" aria-label="Search"/>
+            </ul>   
+            <form className="d-flex ms-auto" role="search">
+              <input 
+                className="form-control me-2" 
+                type="search" 
+                placeholder="Search" 
+                aria-label="Search" 
+              />
               <button className="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            </ul>    
+            </form> 
               </div>
           </div>
       </nav>

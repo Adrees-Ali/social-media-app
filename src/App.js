@@ -4,7 +4,7 @@ import NavbarPrivate from './Components/NavbarPrivate';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Forgot_password from './pages/Forgot_password'
+import ForgotPassword from './pages/ForgotPassword'
 import {
   BrowserRouter as Router,
   Routes,
@@ -15,10 +15,12 @@ import {
 import Dashboard from './pages/Dashboard';
 import Friends from './pages/Friends';
 import Messages from './pages/Messages';
-import Create_Post from './pages/Create_Post';
+import CreatePost from './pages/CreatePost';
 import Settings from './pages/Settings';
-import Profile from './pages/Profile';
+import Profile from './pages/ViewProfile';
+import ViewProfile from './pages/ViewProfile';
 import { useState } from 'react';
+import EditProfile from './pages/EditProfile';
 
 
 function App() {
@@ -38,14 +40,15 @@ function App() {
         <Route path="/home" element={<Home />} />  
         <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />  
         <Route path="/register" element={<Register />} /> 
-        <Route path="/forgot-password" element={<Forgot_password/>} /> 
+        <Route path="/forgotPassword" element={<ForgotPassword/>} /> 
 
             {/* after login routes*/}
         <Route path="/dashboard" element={<Dashboard />} /> 
          <Route path="/friends" element={<Friends />} /> 
          <Route path="/messages" element={<Messages/>} /> 
-         <Route path="/profile" element={<Profile />} /> 
-         <Route path="/create_post" element={<Create_Post />} /> 
+        <Route path="/viewprofile" element={<ViewProfile />} />
+        <Route path="/editprofile" element={<EditProfile />} />
+         <Route path="/createPost" element={<CreatePost />} /> 
          <Route path="/settings" element={<Settings />} /> 
       </Routes>
     </Router>
