@@ -72,7 +72,7 @@ export default function Dashboard() {
        
 
         {/* Right container */}
-        <div className="col-3 bg-light vh-100 p-3 border-start">
+        <div className="col-3 bg-light vh-100 p-3 border-start"> 
           <h6> Friend Suggestions</h6>
           <ul className="list-group mb-3">
             <li className="list-group-item">Usman <button className="btn btn-sm btn-success float-end">Add</button></li>
@@ -80,7 +80,7 @@ export default function Dashboard() {
             <li className="list-group-item">Adrees Ali<button className="btn btn-success btn-sm float-end">Add</button></li>
           </ul>
 
-          <h6> Trending</h6>
+          <h6>Trending</h6>
           <ul className="list-group">
             <li className="list-group-item">#ReactJS</li>
             <li className="list-group-item">#Friendify</li>
