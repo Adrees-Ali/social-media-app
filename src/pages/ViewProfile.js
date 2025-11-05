@@ -32,6 +32,7 @@ export default function ViewProfile() {
             <Link to="/editprofile" className="text-white text-decoration-none">
               Edit Profile
             </Link>
+            <Link></Link>
           </button>
           </div>
 
